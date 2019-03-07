@@ -5,13 +5,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Contact</title>
 	<meta name="vieport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 </head>
 
 <body>
 
+<div class="container">
+<div class="main">
 <header>
-	<h1> Welcome to my simple HTML site </h1>
-	<img src="image.jpg" alt="tenerife">
+	<h1 class="title"> Welcome to my simple HTML site </h1>
+	<div>
+		<img class="imgsize"  src="image2.jpg" alt="tenerife">
+	</div>
 </header>
 
 	<ul>
@@ -20,7 +27,7 @@
 		<li><a href="contact.html">Contact</a></li>
 	</ul>
 
-
+<div class="formcontainer">
 	<form id="get-in-contact" method="get" name="contact-form" target="_self">
 		<label>Name:</label>
 		<input type="text" name="name" placeholder="Type Here" required><br>
@@ -28,10 +35,10 @@
 		<label>Email:</label>
 		<input type="email" name="email" placeholder="Type Here" required><br>
 		
-		<label>Genre:</label><br>
-		<input type="radio" name="genre" value="male">Male<br>
-		<input type="radio" name="genre" value="female">Female<br>
-		<input type="radio" name="genre" value="other">Other<br>
+		<label>Genre:</label>
+			<input type="radio" name="genre" value="male">Male
+			<input type="radio" name="genre" value="female">Female
+			<input type="radio" name="genre" value="other">Other<br><br>
 		
 		<label>Eye Color:</label>
 		<select name="Eye Color">
@@ -40,7 +47,7 @@
 			<option value="brown">Brown</option>
 			<option value="gray">Gray</option>
 			<option value="green">Green</option>
-		</select><br>
+		</select><br><br>
 		
 		<label>Stats:</label><br>
 		<input type="checkbox" name="stats" value="over15m">Over 1,5 m<br>
@@ -53,14 +60,19 @@
 		<input type="text" name="subject" placeholder="Type Here" required><br>
 		
 		<label>Message:</label>
-		<textarea rows="1" cols="10" name="message" required dirname="comment.dir" placeholder="Type Here"></textarea><br>
+		<br>
+		<textarea rows="4" cols="10" name="message" required dirname="comment.dir" placeholder="Type Here"></textarea><br>
 		<input id="submit" name="submit" type="submit" value="Send">     
 	</form>
+</div>
 
 <footer>
 	<h3> Catalin Grigore </h3>
 	<p> Mail: catalin.grigore@tellence.net </p>
 	<p> Telefon: 0316585689 </p>
 </footer>
+
+</div>
+</div>
 </body>
 </html>

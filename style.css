@@ -1,0 +1,299 @@
+.container{
+	text-align: center;
+	padding-top:10px;
+	padding-bottom: 200px;
+	background-color: #A1FFD9;
+}
+
+.main{
+	display: inline-block;
+}
+
+.title{
+	margin:0;
+	padding: 20px;
+	font-family: 'Oswald', sans-serif;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #006789;
+	border-radius: 10px;
+	font-family: 'Oswald', sans-serif;
+	width:900px;
+	position: relative;
+	z-index: 0;
+}
+
+li{
+	float: left;
+}
+
+li a{
+	display: block;
+	padding: 20px;
+	text-align: center;
+	color:white;
+	text-decoration: none;
+	transition: width 2s, height 1s;
+	cursor: pointer;
+}
+
+li a:before, li a:after{
+	position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+	transition: all 1s;
+}
+
+li a:before{
+	top:0px;
+	transform: translateY(10px);
+}
+
+li a:after{
+	bottom: 0px;
+	transform: translateY(-10px);
+}
+
+li a:hover:before, li a:hover:after{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+li a:hover{
+	background-color: #0063D1;
+	color: #272727;
+}
+
+
+footer{
+	font-family: 'Oswald', sans-serif;
+	background-color: #f2f2f2;
+	font-size: 12px;
+	padding-bottom: 5px;
+}
+
+footer h3{
+	padding-top: 10px;
+}
+
+header >div{
+	margin: 0 auto;
+}
+
+.imgsize{
+	width: 100%;
+	max-width: 900px;
+	max-height: 300px;
+	border-radius: 10px;
+}
+
+.bigcontainer{
+	background-color: #f2f2f2;
+	padding:0;
+	margin: 0;
+}
+
+.bigcontainer h2{
+	padding-top: 10px;
+}
+
+.flex-container{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: flex;
+	-webkit-flex-flow:row wrap;
+	justify-content: space-around;
+
+	padding-bottom: 30px;
+}
+
+.flex-item1{
+	background-color: red;
+	padding: 5px;
+	width: 150px;
+	height: 100px;
+	margin-top: 5px;
+	transition: width 2s, height 4s;
+}
+
+.flex-item1:hover{
+	width: 200px;
+	height: 150px;
+}
+
+
+.flex-item2{
+	background-color: red;
+	padding: 5px;
+	width: 150px;
+	height: 100px;
+	margin-top: 5px;
+	transition: width 2s linear 1s;
+}
+
+.flex-item2:hover{
+	width: 200px;
+}
+
+.flex-item3{
+	background-color: red;
+	padding: 5px;
+	width: 150px;
+	height: 100px;
+	margin-top: 5px;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+.flex-item3:hover{
+	width: 180px;
+	height: 130px;
+	transform: rotate(180deg);
+}
+
+.flex-item4{
+	background-color: red;
+	padding: 5px;
+	width: 150px;
+	height: 100px;
+	margin-top: 5px;
+	visibility: visible;
+  	opacity: 1;
+ 	transition: opacity 2s linear;
+
+}
+
+.flex-item4:hover{
+	visibility: hidden;
+  	opacity: 0;
+  	transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.flex-item5{
+	background-color: red;
+	padding: 5px;
+	width: 150px;
+	height: 100px;
+	margin-top: 5px;
+}
+
+
+.formcontainer{
+	background-color: #f2f2f2;
+	border-radius: 10px;
+	text-align: left;
+}
+
+input[type=text], input[type=email] {
+	width: 50%;
+	padding: 5px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 3px solid #ccc;
+	border-radius: 5px;
+}
+
+input[type=text]:focus, select:focus, input[type=email]:focus{
+	background-color: #99FFF9;
+}
+
+input[type=radio]{
+	appearance:none;
+	display: inline-block;
+	position: relative;
+	height: 15px;
+	width: 15px;
+	top: 2px;
+	border: 0;
+	border-radius:50px;
+	cursor: pointer;
+	margin-right: 5px;
+	margin-left: 20px;
+	background-color:red;
+}
+
+input[type=radio]:checked{
+	border-width: 50px;
+}
+
+input[type=checkbox]{
+	appearance:none;
+	display: inline-block;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	top: 5px;
+	margin-left:50px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background-color: red;
+}
+
+label{
+	position:relative;
+	margin-left: 50px;
+}
+
+textarea{
+	height: auto;
+	width: 475px;
+	border-radius:5px;
+	border: 3px solid #ccc;
+	margin-left: 50px;
+}
+
+textarea:focus{
+	background-color: #99FFF9;
+}
+
+#submit{
+	position: relative;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+#submit:hover{
+	background-color: #99FFF9;
+	padding: 10px;
+}
+
+
+.multimediacontainer{
+	position: relative;
+	background-color: #f2f2f2;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.youtube{
+	width: 600px;
+	height: 300px;
+	margin:auto;
+}
+
+.vimeo{
+	width: 600px;
+	height: 300px;
+	margin:auto;
+	border:none;
+	padding-bottom: 20px;
+}
+
+.codepen1{
+	padding-left: 10px;
+	padding-right: 10px;
+	max-width: 70%;
+	margin:auto;
+}
