@@ -1,8 +1,11 @@
+body{
+	background-color: #A1FFD9;
+}
+
 .container{
 	text-align: center;
 	padding-top:10px;
-	padding-bottom: 200px;
-	background-color: #A1FFD9;
+	padding-bottom: 20px;
 }
 
 .main{
@@ -14,6 +17,8 @@
 	padding: 20px;
 	font-family: 'Oswald', sans-serif;
 }
+
+
 
 ul{
 	list-style-type: none;
@@ -73,12 +78,76 @@ li a:hover{
 	color: #272727;
 }
 
+/*Responsive Styles*/
+@media screen and (max-width : 760px){
+    /*Make dropdown links appear inline*/
+    ul {
+      position: relative;
+      width: 100%;
+      margin-top: 20px;
+
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu lin2ks full width*/
+    ul li, li a {
+        width: 100%;
+    }
+
+    li a{
+		display: block;
+		text-align: center;
+		cursor: pointer;
+		transition: none;
+		padding: 10px;
+		font-size: 16px;
+	}
+
+	.title{
+		font-size: 20px;	
+	}
+
+	.imgsize{
+		width: 100%;
+  		height: 60%
+	}
+
+	.formcontainer{
+		width: 100%;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	#submit:hover{
+		padding: 0;
+	}
+
+	textarea{
+		max-width: 100%;
+	}
+
+	footer{
+		max-width: 100%;
+	}
+
+	footer h3{
+		font-size: 12px;
+	}
+
+	footer p{
+		font-size: 10px;
+	}
+
+}
 
 footer{
 	font-family: 'Oswald', sans-serif;
 	background-color: #f2f2f2;
 	font-size: 12px;
 	padding-bottom: 5px;
+	border-radius:10px;
 }
 
 footer h3{
@@ -104,6 +173,7 @@ header >div{
 
 .bigcontainer h2{
 	padding-top: 10px;
+	margin-top: 0;
 }
 
 .flex-container{
@@ -134,7 +204,7 @@ header >div{
 
 
 .flex-item2{
-	background-color: red;
+	background-color: blue;
 	padding: 5px;
 	width: 150px;
 	height: 100px;
@@ -147,7 +217,7 @@ header >div{
 }
 
 .flex-item3{
-	background-color: red;
+	background-color: green;
 	padding: 5px;
 	width: 150px;
 	height: 100px;
@@ -162,7 +232,7 @@ header >div{
 }
 
 .flex-item4{
-	background-color: red;
+	background-color: orange;
 	padding: 5px;
 	width: 150px;
 	height: 100px;
@@ -180,18 +250,25 @@ header >div{
 }
 
 .flex-item5{
-	background-color: red;
+	background-color: black;
+	color:white;
 	padding: 5px;
 	width: 150px;
 	height: 100px;
 	margin-top: 5px;
+	transform-origin: left top;
+  	transition: transform 2s;
 }
 
+.flex-item5:hover{
+	transform: rotate(720deg);
+}
 
 .formcontainer{
 	background-color: #f2f2f2;
 	border-radius: 10px;
 	text-align: left;
+	margin-top: 10px;
 }
 
 input[type=text], input[type=email] {
@@ -246,7 +323,8 @@ label{
 
 textarea{
 	height: auto;
-	width: 475px;
+	width: 60%;
+	max-width: 100%;
 	border-radius:5px;
 	border: 3px solid #ccc;
 	margin-left: 50px;
@@ -266,34 +344,35 @@ textarea:focus{
 #submit:hover{
 	background-color: #99FFF9;
 	padding: 10px;
+	cursor: pointer;
 }
 
 
 .multimediacontainer{
-	position: relative;
 	background-color: #f2f2f2;
-	margin-top: 10px;
-	padding-top: 10px;
-	padding-bottom: 20px;
+	padding:10 0 10 0;
+	display: flex;
+	display: flex;
+  	flex-direction: column;
 }
 
-.youtube{
-	width: 600px;
-	height: 300px;
-	margin:auto;
+.multimediacontainer > div {
+  background-color: #f1f1f1;
+
+
+  text-align: center;
 }
 
-.vimeo{
-	width: 600px;
-	height: 300px;
-	margin:auto;
-	border:none;
-	padding-bottom: 20px;
+iframe{
+	width: 70%;
+	max-width: 100%;
+	height: 50%;
+	padding-top: 20px;
 }
 
 .codepen1{
-	padding-left: 10px;
-	padding-right: 10px;
-	max-width: 70%;
-	margin:auto;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 20px;
 }
