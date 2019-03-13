@@ -370,6 +370,11 @@ iframe{
 	padding-top: 20px;
 }
 
+.imgur{
+	width: 70%;
+	max-width: 100%;
+}
+
 .codepen1{
 	width: 70%;
 	margin-left: auto;
